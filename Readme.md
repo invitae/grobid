@@ -6,6 +6,13 @@
 [![Documentation Status](https://readthedocs.org/projects/grobid/badge/?version=latest)](https://readthedocs.org/projects/grobid/?badge=latest)
 [![Docker Status](https://images.microbadger.com/badges/version/lfoppiano/grobid.svg)](https://hub.docker.com/r/lfoppiano/grobid/ "Latest Docker HUB image")
 
+## Invitae fork
+
+This fork of Grobid adds the ability to run the application in 'batch mode' to the Docker image. Although
+running Grobid in batchmode is discouraged as it will only work run on a single thread, this is acceptable
+as the image is intended for use on AWS batch where we can scale the number of running containers and run them
+all in a single thread.
+
 ## GROBID documentation
 
 Visit the [GROBID documentation](http://grobid.readthedocs.org) for more detailed information.
